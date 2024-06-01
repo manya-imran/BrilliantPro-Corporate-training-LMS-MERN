@@ -1,0 +1,140 @@
+<!-- <%- include('./partials/header.ejs') %> 
+<%- include('./partials/navbar.ejs') %>   
+
+<div class="conainer mt-5 ml-5 mr-5">
+    <h1 style="color: greenyellow;">You have Successfully Logged In.... </h1>
+</div>
+
+<hr><hr>
+
+<div class="conainer mt-5 ml-5 mr-5">
+    <h1>Add your Courses, Projects and Certifications</h1>
+    <hr>
+    <form  method="post">
+        <div class="form-group">
+          <label for="courses">Add a new Course:</label>
+          <input type="text" class="form-control" id="courses" name="courses" aria-describedby="emailHelp" placeholder="Course Name" >
+        </div>
+        <div class="form-group">
+          <label for="projects">Add a new Project</label>
+          <input type="text" class="form-control" id="projects" name="projects" placeholder="Project Name">
+        </div>
+        <div class="form-group">
+            <label for="certification">Add a new Certification</label>
+            <input type="text" class="form-control" id="Certifications name="Certifications" placeholder="Certification Name">
+          </div>
+        
+        <button type="submit" class="btn btn-primary">Confirm</button>
+      </form>
+</div>
+
+<%- include('./partials/footer.ejs') %>    -->
+
+<%- include('./partials/header.ejs') %> 
+<%- include('./partials/navbar.ejs') %>   
+
+<div class="conainer mt-5 ml-5 mr-5">
+    <h1 style="color: darkred;">
+        <b><i>Welcome <%= user.name %></i></b>        
+    </h1>
+    <h4>Email Addresss: <%= user.email %></h4>
+    <hr>
+</div>
+
+<div class="conainer mt-5 ml-5 mr-5">
+    <h1 style="color: darkred;">
+        <b><i>Courses</i></b>        
+    </h1>
+    <hr>
+
+    <div class="container">
+      <div class="conainer">
+        <br><br>
+        <table style="border-width: 10px;">
+          <th><b>Course Description</b></th>
+          <tr>
+            <td><b>Course Name</b></td><td><b>Course Status</b></td>
+          </tr>
+          <tr>
+            <td>HTML Course</td><td>Pending</td>
+          </tr>
+          <tr>
+            <td>CSS Course</td><td>Completed</td>
+          </tr>
+          <tr>
+            <td>JS Course</td><td>Pending</td>
+          </tr>
+        </table>
+      </div>
+      <br><br>
+      <button type="submit" class="btn btn-primary">Add Course</button>
+      <button type="submit" class="btn btn-primary">Delete Course</button>
+    </div>
+
+
+<div class="conainer mt-5 ml-5 mr-5">
+  <h1 style="color: darkred;">
+      <b><i>Projects</i></b>        
+  </h1>
+  <hr>
+
+  <div class="container">
+      <h3>Projects Taken: </h3>
+      <div class="conainer">
+        <br><br>
+        <table style="border-width: 10px;">
+          <th><b>Course Description</b></th>
+          <tr>
+            <td><b>Project Name</b></td><td><b>Project Status</b></td>
+          </tr>
+          <tr>
+            <td>HTML Project</td><td>Pending</td>
+          </tr>
+          <tr>
+            <td>CSS Project</td><td>Completed</td>
+          </tr>
+          <tr>
+            <td>JS Project</td><td>Pending</td>
+          </tr>
+        </table>
+      </div>
+      <br><br>
+      <button type="submit" class="btn btn-primary">Add Project</button>
+      <button type="submit" class="btn btn-primary">Delete Project</button>
+  </div>
+</div>
+
+<div class="conainer mt-5 ml-5 mr-5">
+  <h1 style="color: darkred;">
+      <b><i>Certifications</i></b>        
+  </h1>
+  <hr>
+
+  <div class="container">
+    <div class="conainer">
+      <br><br>
+      <table style="border-width: 10px;">
+        <th><b>Certifications Done</b></th>
+        <tr>
+          <td><b>Certification Name</b></td><td><b>Certification Status</b></td>
+        </tr>
+        <tr>
+          <td>HTML Certification</td><td>Pending</td>
+        </tr>
+        <tr>
+          <td>CSS Certification</td><td>Completed</td>
+        </tr>
+        <tr>
+          <td>JS Certification</td><td>Pending</td>
+        </tr>
+      </table>
+    </div>
+    <br><br>
+      <button type="submit" class="btn btn-primary">Add Certification</button>
+      <button type="submit" class="btn btn-primary">Delete Certification</button>
+  </div>
+</div>
+
+
+
+<%- include('./partials/footer.ejs') %>   
